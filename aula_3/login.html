@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Aula III </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<style>.btn-color{
+  background-color: #0e1c36;
+  color: #fff;
+  
+}
+
+.profile-image-pic{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+
+
+.cardbody-color{
+  background-color: #ebf2fa;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2 class="text-center text-dark mt-5">Enviar Dados</h2>
+        <div class="text-center mb-5 text-dark">PHP 2024</div>
+        <div class="card my-5">
+
+          <form class="card-body cardbody-color p-lg-5" action="validardados.php" method="POST">
+
+            <div class="text-center">
+              <img src="imagens/cinel.jpg" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
+                width="200px" alt="profile">
+            </div>
+
+            <div class="mb-3">
+              <input type="text" class="form-control" id="Username" aria-describedby="emailHelp" placeholder="utilizador" name="utilizador">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="idade" name="idade">
+            </div>
+            <div class="mb-3">
+              <select class="form-select" aria-label="Default select example" name="localidade">
+                <option selected>Escolha uma Opção</option>
+                <option value="Porto">Porto</option>
+                <option value="Lisboa">Lisboa</option>
+                <option value="Coimbra">Coimbra</option>
+                <option value="Faro">Faro</option>
+                
+              </select>
+
+
+            <div class="mb-3">
+              <!--<input type="password" class="form-control" id="password" placeholder="password">-->
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  PHP
+                </label>
+              </div>
+              <div class="form-check">
+                <input name="linguagens" class="form-check-input" type="checkbox" value="PHP" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  JAVA
+                </label>
+              </div><div class="form-check">
+                <input name="linguagens" class="form-check-input" type="checkbox" value="JAVA" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  ASP
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  </label>
+                </div>
+                  Masculino
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="genero" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2" value="masculino">
+                  Feminino
+                </label>
+              </div>
+              <div class="text-center">
+                <input name="genero" class="form-check-input" type="checkbox" value="ASP" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked" value="feminino">             
+            </div>
+            <div class="text-center"><button type="submit" class="btn btn-color px-5 mb-5 w-100">Validar Dados</button></div>
+            <div id="emailHelp" class="form-text text-center mb-5 text-dark"><a href="#" class="text-dark fw-bold"> CRIAR CONTA</a>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>                
+</body>
+</html>

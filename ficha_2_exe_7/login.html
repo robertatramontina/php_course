@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Ficha 2 - Exercício 7 </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<style>.btn-color{
+  background-color: #0e1c36;
+  color: #fff;
+  
+}
+
+.profile-image-pic{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+
+
+.cardbody-color{
+  background-color: #ebf2fa;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2 class="text-center text-dark mt-5">Enviar Dados</h2>
+        <div class="text-center mb-5 text-dark">PHP 2024</div>
+        <div class="card my-5">
+
+          <form class="card-body cardbody-color p-lg-5" action="validardados.php" method="POST">
+
+            <div class="text-center">
+              <img src="imagens/cinel.jpg" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
+                width="200px" alt="profile">
+            </div>
+
+            <div class="mb-3">
+              <input type="text" class="form-control" id="Username" aria-describedby="emailHelp" placeholder="Nome" name="nome">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="E-mail" name="email">
+            </div>
+            <div class="mb-3">
+           <textarea name="comentario" rows="5" cols="70" placeholder="Comentário"></textarea>
+          </div>
+            <div class="mb-3">
+              <select class="form-select" aria-label="Default select example" name="avaliacao">
+                <option value="" selected>Escolha uma Avaliação</option>
+                <option value="Avaliação 1">Avaliação 1</option>
+                <option value="Avaliação 2">Avaliação 2</option>
+                <option value="Avaliação 3">Avaliação 3</option>
+                <option value="Avaliação 4">Avaliação 4</option>
+                <option value="Avaliação 5">Avaliação 5</option>
+              </select>
+            </div>
+          </div>
+            <div class="mb-3">
+              <!--<input type="password" class="form-control" id="password" placeholder="password">-->
+              
+            <div class="text-center"><button type="submit" class="btn btn-color px-5 mb-5 w-100">Validar Dados</button></div>
+            <div id="emailHelp" class="form-text text-center mb-5 text-dark"><a href="#" class="text-dark fw-bold"> CRIAR CONTA</a>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>                
+</body>
+</html>
